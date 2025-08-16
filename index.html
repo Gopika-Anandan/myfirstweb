@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Student Skills Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Web Skills Test</h1>
+    <button id="themeBtn">Change Theme</button>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Student Details</h2>
+    <p>Total Students: <span id="studentCount">0</span></p>
+
+    <button id="sortBtn">Sort by Age</button>
+
+    <table id="studentsTable">
+      <thead>
+        <tr><th>Name</th><th>Age</th><th>Skill</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Kamal</td><td>20</td><td>HTML</td></tr>
+        <tr><td>Ranjani</td><td>21</td><td>CSS</td></tr>
+        <tr><td>Janani</td><td>22</td><td>JavaScript</td></tr>
+        <tr><td>Ranjani</td><td>26</td><td>reactjs</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Add a New Student</h3>
+    <form id="addStudentForm" class="form-box">
+      <label>Name:<br><input type="text" id="sName" placeholder="Enter student name"></label>
+      <label>Age:<br><input type="number" id="sAge" placeholder="Enter age"></label>
+      <label>Skill:<br><input type="text" id="sSkill" placeholder="Enter skill"></label>
+      <button type="submit">Add Student</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Student Skills Test</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
